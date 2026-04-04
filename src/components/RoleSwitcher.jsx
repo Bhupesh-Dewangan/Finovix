@@ -25,12 +25,11 @@ function RoleSwitcher({ role, onRoleChange }) {
 
       <button
         type="button"
-        className={`flex items-center gap-1.5 ${baseBtn} ${role === "admin" ? active : inactive}`}
+        className={`${baseBtn} ${role === "admin" ? active : inactive}`}
         onClick={() => onRoleChange("admin")}
         aria-pressed={role === "admin"}
       >
-        <span className="hidden md:inline">Admin</span>
-        <span className="md:hidden">A</span>
+        Admin
       </button>
     </div>
   );

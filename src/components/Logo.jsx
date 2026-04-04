@@ -10,7 +10,7 @@ function Logo() {
 
       {/* Application name and description */}
       <div>
-        <div className="text-sm text-slate-600 dark:text-neutral-300">FinSight</div>
+        <div className="text-sm text-slate-600 dark:text-neutral-300">Finovix</div>
         <h1 className="text-lg font-semibold text-slate-900 dark:text-white">Financial Activity Dashboard</h1>
       </div>
     </div>
