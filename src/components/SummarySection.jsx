@@ -1,5 +1,5 @@
 import React from "react";
-// ----
+import { useTransactions } from "../context/TransactionsContext";
 
 function CreditCardIcon(props) {
   return (
