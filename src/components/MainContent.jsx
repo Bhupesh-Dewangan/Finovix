@@ -1,5 +1,9 @@
 import React from "react";
 import SummarySection from "./SummarySection";
+import BalanceTrend from "./BalanceTrend";
+import InsightSection from "./InsightSection";
+import SpendingCategory from "./SpendingCategory";
+import SpendingBreakdown from "./SpendingBreakdown";
 
 function MainContent() {
   return (
@@ -14,6 +18,17 @@ function MainContent() {
           <InsightSection />
         </div>
       </div>
+
+      <div className="grid gap-8 lg:grid-cols-2 lg:items-stretch">
+        <div className="flex h-full min-h-0 min-w-0">
+          <SpendingCategory />
+        </div>
+        <div className="flex h-full min-h-0 min-w-0">
+          <SpendingBreakdown />
+        </div>
+      </div>
+
+
     </main>
   );
 }

@@ -87,7 +87,7 @@ function BalanceTrend() {
         </div>
       </div>
 
-      <div className="mt-6 h-[300px] w-full min-w-0 sm:h-[320px]">
+      <div className="mt-6 h-75 w-full min-w-0 sm:h-80">
         {trendChartData.length === 0 ? (
           <div className="flex h-full items-center justify-center rounded-lg border border-dashed border-slate-200 bg-slate-50/50 text-center text-sm text-slate-500 transition-colors duration-200 dark:border-white/10 dark:bg-neutral-950/40 dark:text-neutral-400">
             Add transactions with dates to see your balance trend.
