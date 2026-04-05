@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useMemo, useState } from "react";
+import React, { createContext, useContext, useEffect, useLayoutEffect, useMemo, useState } from "react";
 
 const FinUIContext = createContext(null);
 
@@ -32,7 +32,7 @@ export function FinUIProvider({ children }) {
     localStorage.setItem(ROLE_STORAGE_KEY, role);
   }, [role]);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     applyTheme(theme);
     localStorage.setItem(THEME_STORAGE_KEY, theme);
   }, [theme]);

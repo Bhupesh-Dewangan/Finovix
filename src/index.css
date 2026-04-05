@@ -1,2 +1,44 @@
 @import "tailwindcss";
 
+/* Class-based dark mode: FinUIContext toggles `.dark` on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Minimal motion: dialogs */
+@keyframes fin-backdrop-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fin-panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(0.5rem) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.fin-modal-backdrop {
+  animation: fin-backdrop-in 0.2s ease-out forwards;
+}
+
+.fin-modal-panel {
+  animation: fin-panel-in 0.24s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fin-modal-backdrop,
+  .fin-modal-panel {
+    animation: none;
+  }
+
+  .fin-modal-panel {
+    transform: none;
+  }
+}

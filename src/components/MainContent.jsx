@@ -4,6 +4,7 @@ import BalanceTrend from "./BalanceTrend";
 import InsightSection from "./InsightSection";
 import SpendingCategory from "./SpendingCategory";
 import SpendingBreakdown from "./SpendingBreakdown";
+import RecentTransactions from "./RecentTransactions";
 
 function MainContent() {
   return (
@@ -28,7 +29,7 @@ function MainContent() {
         </div>
       </div>
 
-
+      <RecentTransactions />
     </main>
   );
 }
