@@ -1,16 +1,60 @@
-# React + Vite
+# Finovix
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A dynamic and responsive financial tracking and analytics dashboard built with modern web technologies.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Financial Summary:** View key metrics and summaries of your financial data.
+- **Interactive Charts:** Visualize data trends and insights using Recharts.
+- **Responsive Design:** A beautiful, responsive user interface built using Tailwind CSS.
+- **Modern Architecture:** Fast and optimized development experience using React and Vite.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** [React](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Charts:** [Recharts](https://recharts.org/)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+You will need [Node.js](https://nodejs.org/) installed on your system.
+
+### Installation
+
+1. Navigate to the project directory:
+   ```bash
+   cd Finovix
+   ```
+
+2. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running the Application
+
+To start the development server:
+
+```bash
+npm run dev
+```
+
+Open your browser and navigate to `http://localhost:5173` (or the URL provided in your terminal) to view the application in action.
+
+### Building for Production
+
+To create an optimized production build:
+
+```bash
+npm run build
+```
+
+The production-ready assets will be generated in the `dist` folder.
+
+## Project Structure
+
+- `src/components/` - Reusable UI components including `NavBar`, `MainContent`, and `SummarySection`.
+- `src/App.jsx` - The root component that sets up the main application layout.
