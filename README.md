@@ -9,7 +9,6 @@ A dynamic and responsive financial tracking and analytics dashboard built with m
 
 
 
-
 ## Features
 
 - **Financial Summary:** View key metrics and summaries of your financial data.
